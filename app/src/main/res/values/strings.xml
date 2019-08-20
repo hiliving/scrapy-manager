@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Spider管理</string>
+    <string name="title_activity_spider_manager">爬虫管理</string>
+    <string name="task_wait">实时任务</string>
+    <string name="task_running">运行中</string>
+    <string name="task_finish">已完成</string>
+    <string name="task_ready">所有任务</string>
+</resources>

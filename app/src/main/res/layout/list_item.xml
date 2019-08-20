@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:id="@+id/control_content"
+        android:padding="4dp">
+        <ImageView
+            android:id="@+id/statu_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:id="@+id/spider_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp" />
+
+        <TextView
+            android:id="@+id/spider_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1" />
+        <TextView
+            android:id="@+id/control"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:background="#00B8D4"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="运行"
+            android:textColor="#fff" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/time_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/control_content"
+        android:layout_height="28dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_start"
+            android:textSize="12sp"
+            android:textColor="#898686"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"
+            android:layout_marginLeft="20dp"
+            android:text="开始时间："
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_end"
+            android:textSize="12sp"
+            android:textColor="#898686"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"
+            android:text="结束时间："
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/spider_log"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:src="@drawable/ic_log"
+            android:textColor="#898686"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#E7E5E5"
+        android:layout_below="@+id/time_content"
+        android:layout_marginTop="6dp"
+        android:layout_height="1px"/>
+
+</RelativeLayout>
